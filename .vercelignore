@@ -1,0 +1,8 @@
+.env
+.venv/
+venv/
+backend/*.sqlite3
+backend/__pycache__/
+**/__pycache__/
+*.pyc
+lesson0.py

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FAF7F2">
+  <meta name="description" content="Take timed JLPT N5 mock tests, review your answers, and track your progress.">
+  <title>Nihongo N5 | JLPT Mock Tests</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Noto+Sans+JP:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="data/tests.js" defer></script>
+  <script src="js/storage.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/shadowing.js" defer></script>
+  <script src="js/audio.js" defer></script>
+  <script src="js/listening-review.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body data-page="loading">
+  <a class="skip-link" href="#app">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#/" aria-label="Nihongo N5 home">
+        <span class="brand-mark" aria-hidden="true">日</span>
+        <span class="brand-copy">
+          <strong>Nihongo N5</strong>
+          <small>日本語 Practice</small>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation"></nav>
+        <button class="icon-button theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+          <span aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1">
+    <section class="loading-screen" aria-label="Loading">
+      <div class="loading-mark" aria-hidden="true">日</div>
+      <p>Loading your practice space…</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer">
+    <div class="container footer-inner">
+      <p>JLPT N5 practice, made for steady progress.</p>
+      <p>© <span id="current-year">2026</span> Nihongo N5 · Not affiliated with the JLPT.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <div id="modal-root"></div>
+
+  <noscript>
+    <div class="noscript-message">This practice app needs JavaScript enabled to run.</div>
+  </noscript>
+</body>
+</html>

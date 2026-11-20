@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+backend/*.sqlite3
+.env
+.vercel/
+lesson0.py
+.vercel
