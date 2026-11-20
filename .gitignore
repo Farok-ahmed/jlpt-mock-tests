@@ -7,3 +7,4 @@ backend/*.sqlite3
 .vercel/
 lesson0.py
 .vercel
+.env*
